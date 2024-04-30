@@ -577,6 +577,43 @@ textarea {
   width: 100%;
 }
 
+/* ====== feature css ====== */
+.feature-section .single-feature {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.feature-section .single-feature .icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #f7c873;
+  color: #105d27;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 65px;
+  line-height: 1;
+}
+
+.feature-section .single-feature .icon img {
+  height: 80%;
+}
+
+.feature-section .single-feature .icon.beregu img {
+  height: 60%;
+}
+
+.feature-section .single-feature .content h3 {
+  font-family: "Chau Philomene One", sans-serif;
+  margin-bottom: 20px;
+}
+
+.feature-section .single-feature .content p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
 /* ==========================================================================================
    -- Extended Features --
 ========================================================================================== */

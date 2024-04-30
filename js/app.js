@@ -99,6 +99,9 @@
 
     //Back To Top
     backToTop()
+
+    new WOW().init();
+    
   });
   
   $(window).scroll(function () {
