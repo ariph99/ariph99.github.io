@@ -1,1368 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="OMVN XIV UM 2024">
-    <link rel="shortcut icon" href="images/logo_umvn.png" type="image/x-icon">
-    <link rel="icon" href="images/logo_umvn.png" type="image/x-icon">
+
+<head>
+    <meta charset="utf-8">
     <title>OMVN XIV UM 2024</title>
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/line-awesome.css">
-    <link rel="stylesheet" href="css/vendor/animate.css">
-    <link rel="stylesheet" href="css/vendor/slick.css">
-    <link rel="stylesheet" href="css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css"> 
-  </head>
-  <body>
-    <!-- ========== Preloader ========== -->
-    <div class="preloader">
-      <div class="lds-ripple">
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <!-- ========== Preloader ========== -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <!-- ========== Site Header ========== -->
-    <header class="site-header d-lg-block d-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="header-content">
-              <!-- Header Left -->
-              <div class="header-left">
-                <div class="site-logo">
-                  <a href="#home">
-                    <img src="images/logo.png" alt="Site Logo">
-                  </a>
-                </div>
-              </div>
-              <!-- Header Left -->
-              
-              <!-- Header Right -->
-              <div class="header-right">
-                <div class="site-navigation">
-                  <ul>
-                    <li>
-                      <a href="#about">Timeline</a>
-                    </li>
-                    <li>
-                      <a href="#features">Persyaratan</a>
-                    </li>
-                    <li>
-                      <a href="#pricing">Rayon</a>
-                    </li>
-                    <li>
-                      <a href="#testimonials">Alur Daftar</a>
-                    </li>
-                    <li>
-                      <a href="#blogs">Hadiah</a>
-                    </li>
-                    <li>
-                      <a href="#contact">Hubungi Kami</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ms-4">
-                  <a href="#" class="anchor-button secondary button-sm">
-                    Daftar Sekarang!
-                  </a>
-                </div>
-              </div>
-              <!-- Header Right -->
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
-    <!-- ========== Site Header ========== -->
+        <!-- Spinner End -->
 
-    <!-- ========== Site Mobile Header ========== -->
-    <header class="site-mobile-header d-block d-lg-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="header-content">
-              <!-- Header Left -->
-              <div class="header-left">
-                <div class="site-logo">
-                  <a href="#home">
-                    <img src="images/logo.png" alt="">
-                  </a>
-                </div>
-              </div>              
-              <!-- Header Left -->
 
-              <!-- Header Right -->
-              <div class="header-right">
-                <div class="me-4">
-                  <a href="#" class="anchor-button secondary button-sm">
-                    Daftar!
-                  </a>
-                </div>
-                <div class="mobile-nav-toggle">
-                  <i class="las la-bars"></i>
-                </div>
-              </div>
-              <!-- Header Right -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- ========== Site Mobile Header ========== -->
-
-    <!-- ========== Mobile Navigation ========== -->
-    <div class="mobile-navigation-wrap p-4">
-      <!-- Menu Close -->
-      <div class="nav-header">
-        <i class="las la-times-circle hide-mobile-nav"></i>
-      </div>
-      <!-- Menu Close -->
-
-      <!-- Navigation Items -->
-      <div class="mobile-nav">
-        <ul>
-          <li>
-            <a href="#about">Timeline</a>
-          </li>
-          <li>
-            <a href="#features">Persyaratan</a>
-          </li>
-          <li>
-            <a href="#pricing">Rayon</a>
-          </li>
-          <li>
-            <a href="#testimonials">Alur Daftar</a>
-          </li>
-          <li>
-            <a href="#blogs">Hadiah</a>
-          </li>
-          <li>
-            <a href="#contact">Hubungi Kami</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Navigation Items -->  
-    </div>
-    <!-- ========== Mobile Navigation ========== -->
-
-    <main>
-      <!-- ========== Site Banner ========== -->
-      <section class="site-banner" id="home">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <!-- Banner Heading --> 
-              <div class="banner-heading">
-                <div class="banner-text mb-4">
-                  <div class="banner-title">
-                    <h1>
-                    Apa itu OMVN XIV?
-                    </h1>
-                  </div>
-                  <div class="banner-description">
-                    <p>
-                    Olimpiade Matematika Vektor Nasional (OMVN) 2024 adalah olimpiade matematika dengan skala nasional yang diselenggarakan untuk jenjang SD/Sederajat, SMP/Sederajat, dan SMA/Sederajat. OMVN XIV ini memiliki tujuan untuk meningkatkan kemampuan akademik dan kemampuan berkompetisi utamanya di bidang matematika.
-                    </p>
-                  </div>
-                </div>
-                <div class="banner-download-buttons">
-                  <a href="#" class="anchor-button secondary button-sm">
-                    Daftar Sekarang!
-                  </a>
-                  <a href="#" class="anchor-button secondary button-sm">
-                    Download TOR
-                  </a>
-                </div>
-              </div>
-              <!-- Banner Heading -->
-            </div>
-
-            <div class="col-lg-6 mt-lg-0 mt-5 d-lg-block">
-              <!-- Banner Image -->
-              <div class="banner-image">
-                <img src="images/banner-omvn4-min.png" alt="Mobile Banner Image">
-              </div>
-              <!-- Banner Image -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== Site Banner ========== -->
-      <section class="sp-t" id="cabang">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mb-5 mx-auto text-center">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="heading-title">
-                  <h2>Kategori Lomba</h2>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <!-- About Data Display -->
-          <div class="row">
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SD/Sederajat</h3>
-                  <p>Kategori SD Perorangan</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMP/Sederajat</h3>
-                  <p>Kategori SMP Perorangan</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-users"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMP/Sederajat</h3>
-                  <p>Kategori SMP Beregu</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMA/Sederajat</h3>
-                  <p>Kategori SMA Perorangan</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-users"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMA/Sederajat</h3>
-                  <p>Kategori SMA Beregu</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- About Data Display -->
-
-          </div>
-        </div>  
-      </section>
-      <!-- ========== About Section ========== -->
-      <section class="sp-t" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mb-5 mx-auto text-center">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="sub-heading">
-                  <p>Who we are?</p>
-                </div>
-                <div class="heading-title">
-                  <h2>Cabang </h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    Market leader like business, is better with multiple partners.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <!-- About Data Display -->
-          <div class="row">
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user"></i>
-                </div>
-                <div class="item-content">
-                  <h3>Sekolah Dasar</h3>
-                  <p>Kategori Lomba SD Perorangan</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMP Personal</h3>
-                  <p>Kategori Lomba SMP Perorangan</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user-friends"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMP Group</h3>
-                  <p>Kategori Lomba SMP Kelompok</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMA Personal</h3>
-                  <p>Kategori Lomba SMA Sederajat Perorangan</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4 text-center">
-              <div class="iconbox-primary">
-                <div class="item-icon mb-4">
-                  <i class="las la-user-friends"></i>
-                </div>
-                <div class="item-content">
-                  <h3>SMA Group</h3>
-                  <p>Kategori Lomba SMA Sederajat Kelompok</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- About Data Display -->
-          <div class="row mt-5">
-            <div class="col-md-12">
-              <!-- CEO Message -->
-              <div class="ceo-message-wrap p-5">
-                <div class="row align-items-center"> 
-                  <div class="col-lg-5 mb-lg-0 mb-4">
-                    <div class="ceo-image">
-                      <img src="images/ceo.png" alt="Ceo Image">
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-1 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">OMVN XIV</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#timeline" class="nav-item nav-link">Timeline</a>
+                        <a href="#persyaratan" class="nav-item nav-link">Persyaratan</a>
+                        <a href="#rayon" class="nav-item nav-link">Rayon</a>
+                        <a href="#alur" class="nav-item nav-link">Alur Daftar</a>
+                        <a href="#hadiah" class="nav-item nav-link">Hadiah</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
-                  </div> 
-                   
-                  <div class="col-lg-7">
-                    <div class="ceo-message-content ms-lg-4">
-                      <div class="ceo-message-text mb-4">
-                        “We accept that flawlessness is exaggerated and frequently disillusions when the commerce objectives are what checks.”
-                      </div>
-                      <div class="meta">
-                        <div><strong>Bellal Dhar</strong></div>
-                        <div>Ceo & Founder</div> 
-                      </div>
-                    </div> 
+                    <a href="https://pendaftaran.omvn-um.com/" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Daftar Sekarang!</a>
                 </div>
-              </div>
-              <!-- CEO Message -->
-            </div>
-          </div> 
-          </div>
-        </div>  
-      </section>
-      <!-- ========== About Section ========== -->
-      
-      <!-- Section: Timeline -->
-      <section class="sp-t">
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mb-5 mx-auto text-center">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="heading-title">
-                  <h2>TIMELINE</h2>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Apa itu OMVN XIV?</h1>
+                            <p class="text-white pb-3 animated slideInDown">Olimpiade Matematika Vektor Nasional (OMVN) 2024 adalah olimpiade matematika dengan skala nasional yang diselenggarakan untuk jenjang SD/Sederajat, SMP/Sederajat, dan SMA/Sederajat. OMVN XIV ini memiliki tujuan untuk meningkatkan kemampuan akademik dan kemampuan berkompetisi utamanya di bidang matematika.</p>
+                            <a href="https://pendaftaran.omvn-um.com/" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Daftar Sekarang</a>
+                            <a href="" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Download TOR</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/home1.png" alt="">
+                                <img class="img-fluid" src="img/home2.png" alt="">
+                                <img class="img-fluid" src="img/home3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- Section Heading -->
             </div>
-          </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Kategori Start -->
+        <div class="container-xxl py-3">
+            <div class="container py-3 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="mb-5">Kategori Lomba</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-child fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">SD Sederajat</h5>
+                            <p class="mb-0">Perorangan / Individu</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-child fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">SMP Sederajat</h5>
+                            <p class="mb-0">Perorangan / Individu</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-child fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">SMA Sederajat</h5>
+                            <p class="mb-0">Perorangan / Individu</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">SMP Sederajat</h5>
+                            <p class="mb-0">Beregu / Kelompok</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">SMA Sederajat</h5>
+                            <p class="mb-0">Beregu / Kelompok</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Kategori End -->
+
+        <!-- Timeline Start -->
+        <div class="container-xxl py-3" id="timeline">
+            <div class="container py-3 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">road to OMVN XIV</h5>
+                    <h1 class="mb-5">TIMELINE</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-check text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Pendaftaran Gelombang 1</h5>
+                            <p class="m-0"> 6 Mei - 23 Juni 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-check-circle text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Pendaftaran Gelombang 2</h5>
+                            <p class="m-0">24 Juni - 4 Agustus 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-check-square text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Pendaftaran Gelombang 3</h5>
+                            <p class="m-0">5 Agustus - 29 September 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-sitemap text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Babak Penyisihan</h5>
+                            <p class="m-0">12 Oktober 2024 (Online melalui website ujian dan Zoom Meeting)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-rocket text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Babak Semifinal</h5>
+                            <p class="m-0">19 Oktober 2024 (online melalui Zoom Meeting)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-star text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Babak Final</h5>
+                            <p class="m-0">2 November 2024 (Offline di Universitas Negeri Malang)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-award    text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">OMVN Award</h5>
+                            <p class="m-0">3 November 2024 (Offline di Universitas Negeri Malang)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Timeline End -->
+
+        <!-- Persyaratan Start -->
+        <div class="container-xxl py-3" id="persyaratan">
+            <div class="container py-3 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">OMVN requirements</h5>
+                        <h1 class="mb-4">PERSYARATAN UMUM</h1>
+                         <ul>
+                            <li class="jarak">
+                                Peserta OMVN XIV merupakan pelajar jenjang SD/Sederajat, SMP/Sederajat, SMA/Sederajat di seluruh Indonesia.
+                            </li>
+                            <li class="jarak">
+                                Peserta OMVN XIV dapat mendaftarkan diri sesuai jenjang pendidikan yang sedang ditempuh.
+                            </li>
+                            <li class="jarak">
+                                Peserta OMVN XIV jenjang SD/Sederajat dapat mengikuti kategori perorangan. Untuk peserta OMVN XIV jenjang SMP/Sederajat dan SMA/Sederajat dapat mengikuti dua kategori yaitu perorangan dan beregu.
+                            </li>
+                            <li class="jarak">
+                                Untuk kategori beregu, setiap regunya terdiri dari 3 anggota yang berasal dari sekolah yang sama dan hanya diperbolehkan menjadi anggota dari satu regu saja.
+                            </li>
+                            <li class="jarak">
+                                Pada kategori beregu, satu regu dihitung sebagai satu peserta.
+                            </li>
+                            <li class="jarak">
+                             Peserta OMVN XIV diperbolehkan mendaftar secara mandiri atau delegasi sekolah.
+                            </li>
+                            <li class="jarak">
+                                Peserta OMVN XIV yang telah terdaftar tidak dapat digantikan oleh siapapun.
+                            </li>
+                          </ul>
+                        <h1 class="mb-4">DELEGASI SEKOLAH</h1>
+                          <ul>
+                            <li class="jarak">
+                                Peserta OMVN XIV yang mendaftarkan diri dengan delegasi sekolah diwajibkan untuk menyertakan surat delegasi dari sekolah masing-masing.
+                            </li>
+                            <li class="jarak">
+                                Masing-masing sekolah dapat mendelegasikan lebih dari satu peserta untuk pendaftaran secara delegasi.
+                            </li>
+                            <li class="jarak">
+                                Peserta delegasi berhak mendapatkan potongan harga yang dapat diakui melalui proses yang tertera pada TOR Peserta.
+                            </li>
+
+                            </ul>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/home1.png" alt="">
+                            <img class="img-fluid" src="img/home2.png" alt="">
+                            <img class="img-fluid" src="img/home3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Persyaratan End -->
+
+        <!-- Rayon Start -->
+        <div class="container-xxl py-3" id="rayon">
+            <div class="container py-3 px-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="text-center ">
+                    <h5 class="text-primary-gradient fw-medium">Informasi OMVN</h5>
+                    <h1 class="mb-4">Daftar Rayon</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-6">
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Balikpapan
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Bandung
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Banyuwangi
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Bekasi
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Bima
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Blitar
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Bogor
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Denpasar
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Jakarta
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Jombang
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Kediri
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Lamongan
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Lumajang
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Madiun
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Madura
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Makassar
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Malang Selatan
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Malang Utara
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Medan
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Merauke
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Mojokerto
+                      </div>
+                      <div class="jarak">
+                        <i class="fa fa-map-marker-alt me-2"></i>Nganjuk
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12 col-6">
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Pasuruan
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Probolinggo
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Purworejo
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Semarang
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Sidoarjo
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-6">
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Surabaya
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Tangerang
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Trenggalek
+                          </div>
+                          <div class="jarak">
+                            <i class="fa fa-map-marker-alt me-2"></i>Tulungagung
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p><strong>*Informasi rayon: </strong><a href="https://linktr.ee/omvn_um" target="_blank">linktr.ee/omvn_um</a></p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Rayon End -->
+
+        <!-- Alur Start -->
+        <div class="container-xxl py-3" id="alur">
+            <div class="container py-3 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Mau daftar?</h5>
+                    <h1 class="mb-3">Alur Pendaftaran</h1>
+                </div>
+                <div class="col-xl">
+                    <div class="testimonial-item rounded">
+                      <ul>
+                        <li class="jarak">
+                          Peserta <strong>membuat akun dengan mengisikan nama peserta (nama ketua regu untuk kategori beregu), email, nomor handphone yang valid dan aktif, serta password</strong> melalui website pendaftaran OMVN XIV yaitu <a href="https://pendaftaran.omvn-um.com/" target="_blank" rel="noopener noreferrer">pendaftaran.omvn-um.com</a>.
+                        </li>
+                        <li class="jarak">
+                            Kemudian <strong>akun akan diverifikasi</strong>. Setelah akun diverifikasi, peserta diharuskan <strong>log in dengan menggunakan email dan password</strong> yang telah didaftarkan sebelumnya.
+                        </li>
+                        <li class="jarak">
+                            Pada laman dashboard, peserta dipersilahkan untuk <strong>memilih kategori jenjang dan rayon</strong>. Silahkan memilih <strong>rayon sesuai dengan domisili asal sekolah</strong>. Apabila kabupaten/kota asal sekolah tidak tertera pada pilihan utama rayon, peserta bisa mengecek rayon pada TOR Peserta yang telah tersedia. Sebagai contoh Kabupaten Jember yang masuk pada cakupan rayon Lumajang.
+                        </li>
+                        <li class="jarak">
+                            Setelah memilih kedua kategori tersebut, akan tertera nominal biaya pendaftaran yang harus dibayarkan. Peserta harus melakukan pembayaran sesuai dengan nominal biaya pendaftaran yang tertera ke rekening bank atau e-wallet yang telah disediakan panitia.
+                        </li>
+                        <li class="jarak">
+                            Setelah melakukan pembayaran, peserta wajib melakukan konfirmasi pembayaran ke narahubung sesuai dengan jenjang yang dipilih dengan menyertakan bukti pembayaran.
+                        </li>
+                        <li class="jarak">
+                            Panitia akan melakukan validasi pembayaran peserta, maksimal 1x24 jam setelah melakukan konfirmasi pembayaran ke narahubung. Apabila terdapat kendala, dapat menghubungi Web Call Center: 0812-3193-3341 (Putri)
+                        </li>
+                        <li class="jarak">
+                            Setelah pembayaran divalidasi, peserta harus mengisikan data sekolah, data peserta, dan file yang diperlukan dengan lengkap dan benar. 
+                        </li>
+                        <li class="jarak">
+                            Setelah seluruh data dipastikan benar, peserta harus melakukan lock data.
+                        </li>
+                        <li class="jarak">
+                            Setelah data berhasil di lock, peserta wajib melakukan pengunduhan kartu peserta.
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="mb-4">Biaya  Pendaftaran</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded border">
+                            <div class="border-bottom p-4 mb-4">
+                                <h4 class="text-primary-gradient mb-1">Gelombang 1</h4>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check text-primary-gradient me-2"></i>Perorangan</span>Rp. 65.000</div>
+                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check text-primary-gradient me-2"></i>Beregu</span>Rp. 135.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded border">
+                            <div class="border-bottom p-4 mb-4">
+                                <h4 class="text-primary-gradient mb-1">Gelombang 2</h4>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check text-primary-gradient me-2"></i>Perorangan</span>Rp. 70.000</div>
+                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check text-primary-gradient me-2"></i>Beregu</span>Rp. 140.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded border">
+                            <div class="border-bottom p-4 mb-4">
+                                <h4 class="text-primary-gradient mb-1">Gelombang 3</h4>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check text-primary-gradient me-2"></i>Perorangan</span>Rp. 75.000</div>
+                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check text-primary-gradient me-2"></i>Beregu</span>Rp. 150.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- Alur End -->
+
+        <!-- Hadiah Start -->
+        <div class="container-xxl py-3" id="hadiah">
+            <div class="container py-3 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">What's you Get</h5>
+                    <h1 class="mb-5">Reward</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Uang Pembinaan</h5>
+                            <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-award fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Piagam</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-trophy fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Trophy</h5>
+                            <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-star fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Medali</h5>
+                            <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-gift fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Merchandise</h5>
+                            <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hadiah End -->
         
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="main-timeline">
-                      <a href="#" class="timeline">
-                          <div class="timeline-icon"><i class="las la-check"></i></div>
-                          <div class="timeline-content">
-                              <h3 class="title">5 Juni - 31 Juli 2024</h3>
-                              <div class="description">
-                                    Pendaftaran Peserta OMVN 2024  Gelombang 1.
-                                    Biaya Pendaftaran Non Delegasi : Rp75.000,- 
-                                    Biaya Pendaftaran Delegasi : Rp65.000,-
-                              </div>
-                          </div>
-                      </a>
-                      <a href="#" class="timeline">
-                          <div class="timeline-icon"><i class="las la-check-double"></i></div>
-                          <div class="timeline-content">
-                              <h3 class="title">1 Agustus - 30 Sept 2024</h3>
-                              <p class="description">
-                                  Pendaftaran Peserta OMVN 2024 Tahap Gelombang 1.
-                              </p>
-                              <p class="description">
-                                  Biaya Pendaftaran Non Delegasi : Rp75.000,- 
-                              </p>
-                              <p class="description">
-                                  Biaya Pendaftaran Delegasi : Rp65.000,00
-                              </p>
-                          </div>
-                      </a>
-                      <a href="#" class="timeline">
-                          <div class="timeline-icon"><i class="las la-clipboard"></i></div>
-                          <div class="timeline-content">
-                              <h3 class="title">7 Oktober 2024</h3>
-                              <p class="description">
-                                  Pendaftaran Peserta Olimpiade Matematika Vektor Nasional (OMVN) 2024 Tahap Gelombang 1.
-                                  Biaya Pendaftaran Non Delegasi : Rp75.000,00
-                                  Biaya Pendaftaran Delegasi : Rp65.000,00
-                              </p>
-                          </div>
-                      </a>
-                      <a href="#" class="timeline">
-                          <div class="timeline-icon"><i class="las la-sitemap"></i></div>
-                          <div class="timeline-content">
-                              <h3 class="title">14 Oktober 2024</h3>
-                              <p class="description">
-                                  Pelaksanaan Babak Penyisihan Olimpiade Matematika Vektor Nasional (OMVN) 2024. Dilaksanakan secara daring melalui Website Ujian dan Zoom Meeting.
-                          </div>
-                      </a>
-                      <a href="#" class="timeline">
-                          <div class="timeline-icon"><i class="las la-check"></i></div>
-                          <div class="timeline-content">
-                              <h3 class="title">5 Juni - 31 Juli 2024</h3>
-                              <p class="description">
-                                  Pendaftaran Peserta Olimpiade Matematika Vektor Nasional (OMVN) 2024 Tahap Gelombang 1.
-                                  Biaya Pendaftaran Non Delegasi : <b>Rp 75.000,-</b>
-                                  
-                              </p>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== General Features ========== -->
-      <section class="sp-t" id="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="sub-heading">
-                  <p>Awesome Features</p>
-                </div>
-                <div class="heading-title">
-                  <h2>Check out some of our<br>amazingly crafted features</h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    Amazing features - If you love Amazing features.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <!-- Features Data Display -->
-            <div class="col-lg-4">
-              <div class="iconbox-secondary mb-4">
-                <div class="item-icon pink me-4">
-                  <i class="las la-paw"></i>
-                </div>
-                <div class="item-content">
-                  <h4>Business Data</h4>
-                  <p>Feel The Raw Naked business data Of The Road.</p>
-                </div>
-              </div>
-              <div class="iconbox-secondary mb-4">
-                <div class="item-icon brinjal me-4">
-                  <i class="las la-bell"></i>
-                </div>
-                <div class="item-content">
-                  <h4>Smart Notification</h4>
-                  <p>Whenever There's a Snack Gap, smart notification Fits.</p>
-                </div>
-              </div>
-              <div class="iconbox-secondary mb-4">
-                <div class="item-icon yellow me-4">
-                  <i class="las la-copy"></i>
-                </div>
-                <div class="item-content">
-                  <h4>Highly Customizable</h4>
-                  <p>The highly customizable Sign Means Happy Motoring.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Features Data Display -->
-
-            <div class="col-lg-4 my-lg-0 my-5">
-              <!-- Features Image -->
-              <div class="feature-mobile-image">
-                <img src="images/feature-mobile-01.png" alt="Feature Image 01">
-              </div>
-              <!-- Features Image -->
-            </div>
-
-            <!-- Features Data Display -->
-            <div class="col-lg-4">
-              <div class="iconbox-secondary mb-4">
-                <div class="item-icon green me-4">
-                  <i class="las la-comment-dots"></i>
-                </div>
-                <div class="item-content">
-                  <h4>Live Chat</h4>
-                  <p>Live chat will be for you what you want it to be.</p>
-                </div>
-              </div>
-              <div class="iconbox-secondary mb-4">
-                <div class="item-icon blue me-4">
-                  <i class="las la-share-square"></i>
-                </div>
-                <div class="item-content">
-                  <h4>Social Share</h4>
-                  <p>A Finger of Social share is Just Enough to Give Your Kids a Treat.</p>
-                </div>
-              </div>
-              <div class="iconbox-secondary mb-4">
-                <div class="item-icon darkyellow me-4">
-                  <i class="las la-layer-group"></i>
-                </div>
-                <div class="item-content">
-                  <h4>Amazing Resources</h4>
-                  <p>Amazing resources quality you can see.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Features Data Display -->
-          </div>
-        </div>
-      </section>
-      <!-- ========== General Features ========== -->
-
-      <!-- ========== Extended Features ========== -->
-      <section class="sp-t">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="sub-heading">
-                  <p>Extended Features</p>
-                </div>
-                <div class="heading-title">
-                  <h2>Simple, Yet Powerful Features</h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    There's More Than One Way To Eat A Extended features.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-lg-5">
-              <!-- Feature Content -->
-              <div class="extended-feature-content mb-lg-0 mb-5">
-                <div class="mb-4">
-                  <h3>Highly Secure</h3>
-                  <p>
-                    One Highly secure is better than two of something else.
-                  </p>
-                </div>
-                <div class="iconbox-secondary mb-4">
-                  <div class="item-icon darkyellow me-4">
-                    <i class="las la-paw"></i>
-                  </div>
-                  <div class="item-content">
-                    <h4>Business Data</h4>
-                    <p>Feel The Raw Naked business data Of The Road.</p>
-                  </div>
-                </div>
-                <div class="iconbox-secondary mb-4">
-                  <div class="item-icon darkyellow me-4">
-                    <i class="las la-layer-group"></i>
-                  </div>
-                  <div class="item-content">
-                    <h4>Amazing Resources</h4>
-                    <p>Amazing resources quality you can see.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Feature Content -->
-            </div>
-            <div class="col-lg-7">
-              <!-- Feature Image -->
-              <div class="extended-feature-image">
-                <img src="images/features-01.png" alt="Feature Image 02">
-              </div>
-              <!-- Feature Image -->
-            </div>
-          </div>
-          <div class="row align-items-center sp-t">
-            <div class="col-lg-7 order-2 order-lg-1">
-              <!-- Feature Image -->
-              <div class="list-feature-image">
-                <img src="images/features-02.png" alt="Feature Image 03">
-              </div>
-              <!-- Feature Image -->
-            </div>
-            <div class="col-lg-5 order-1 order-lg-2">
-              <!-- Feature Content -->
-              <div class="extended-feature-content mb-lg-0 mb-5">
-                <div class="mb-4">
-                  <h3>Instant Reaction</h3>
-                  <p>
-                    It's Not All Instant reaction, Instant reaction, Instant reaction, you know.
-                  </p>
-                </div>
-                <div class="d-flex iconbox-list mb-4">
-                  <div class="item-icon me-4">
-                    <i class="las la-check-circle"></i>
-                  </div>
-                  <div class="item-content">
-                    <p>Instant reaction makes me want to do it again.</p>
-                  </div>
-                </div>
-                <div class="d-flex iconbox-list mb-4">
-                  <div class="item-icon me-4">
-                    <i class="las la-check-circle"></i>
-                  </div>
-                  <div class="item-content">
-                    <p>It's Slightly Rippled with a Flat Instant reaction.</p>
-                  </div>
-                </div>
-
-                <div class="mt-5">
-                  <a href="#" class="anchor-button primary button-lg">Read More</a>
-                </div>
-              </div>
-              <!-- Feature Content -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== Extended Features ========== -->
-
-      <!-- ========== Pricing Plans ========== -->
-      <section class="pricing-plan sp-tb" id="pricing">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 mx-auto text-center mb-5">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="sub-heading">
-                  <p>Choose as your need</p>
-                </div>
-                <div class="heading-title">
-                  <h2>Really Simple Pricing</h2>
-                </div>
-                <div class="heading-description">
-                  <p>No hidden fees, no limits</p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 mb-lg-0 mb-4">
-              <!-- Pricing Box -->
-              <div class="pricing-plan-single p-5">
-                <div class="plan-heading mb-5">
-                  <h3>Basic</h3>
-                  <p>
-                    Small Business who are just starting on their marketing.
-                  </p>
-                </div>
-                <div class="plan-cost mb-5">
-                  <span class="price">$30.00</span>
-                  <span class="schedule">/month</span>
-                </div>
-                <div class="plan-action">
-                  <div class="mb-4">
-                    <a href="#" class="anchor-button primary button-lg">Try free for 30 days</a>
-                  </div>
-                  <div class="text-center">No credit card required</div>
-                </div>
-              </div>
-              <!-- Pricing Box -->
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4">
-              <!-- Pricing Box -->
-              <div class="pricing-plan-single plan-professional p-5">
-                <div class="plan-heading mb-5">
-                  <h3>Professional</h3>
-                  <p>Established Marketing Teams with bigger needs.</p>
-                </div>
-                <div class="plan-cost mb-5">
-                  <span class="price">$80.00</span>
-                  <span class="schedule">/month</span>
-                </div>
-                <div class="plan-action">
-                  <div class="mb-4">
-                    <a href="#" class="anchor-button secondary button-lg">Try free for 30 days</a>
-                  </div>
-                  <div class="text-center">No credit card required</div>
-                </div>
-              </div>
-              <!-- Pricing Box -->
-            </div>
-            <div class="col-lg-4 mb-lg-0 mb-4">
-              <!-- Pricing Box -->
-              <div class="pricing-plan-single p-5">
-                <div class="plan-heading mb-5">
-                  <h3>Enterprise</h3>
-                  <p>Agencies who need to manage multiple accounts.</p>
-                </div>
-                <div class="plan-cost mb-5">
-                  <span class="price">$120.00</span>
-                  <span class="schedule">/month</span>
-                </div>
-                <div class="plan-action">
-                  <div class="mb-4">
-                    <a href="#" class="anchor-button primary button-lg">Try free for 30 days</a>
-                  </div>
-                  <div class="text-center">No credit card required</div>
-                </div>
-              </div>
-              <!-- Pricing Box -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== Pricing Plans ========== -->
-
-      <!-- ========== Trusties ========== -->
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <!-- Section Heading-->
-              <div class="section-heading mb-5">
-                <div class="sub-heading">
-                  <p>Integrations</p>
-                </div>
-                <div class="heading-title">
-                  <h2>Trusted by many companies</h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    Would You Give Someone Your Last Trusted by? Get the Door - It's Trusted by.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading-->
-            </div>
-            <div class="col-lg-8">
-              <!-- Third Parties Logos -->
-              <div class="row">
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/Notion.png" alt="Notion">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/Skype.png" alt="Skype">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/VSCode.png" alt="VSCode">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/GitHub.png" alt="GitHub">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/Spotify.png" alt="Spotify">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/Kickstarter.png" alt="Kickstarter">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/Xbox.png" alt="Xbox">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-4 mb-4">
-                  <div class="third-party-logo">
-                    <img src="images/Behance.png" alt="Behance">
-                  </div>
-                </div>
-              </div>
-              <!-- Third Parties Logos -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== Trusties ========== -->
-
-      <!-- ========== Testimonails ========== -->
-      <section class="testimonials sp-t" id="testimonials">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="sub-heading">
-                  <p>Our Impact</p>
-                </div>
-                <div class="heading-title">
-                  <h2>People who already love us</h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    It's the Bright One, it's the Right One, that's Love us.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="testimonials-box p-5">
-                <div class="row">
-                  <div class="col-lg-5">
-                    <!-- Tesimononie Image Slider -->
-                    <div class="testimonie-thumb-slider">
-                      <img src="images/testie-01.png" alt="testie-01">
-                      <img src="images/testie-02.png" alt="testie-02">
-                      <img src="images/testie-03.png" alt="testie-03">
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" id="contact">
+            <div class="container py-5 px-lg-5">
+    
+                <div class="row g-5">
+                    <div class="col-md-8 col-lg-6">
+                        <h4 class="text-white mb-4">OMVN XIV - 2024</h4>
+                        
+                            <img src="img/sponsor.png">
+                        
+                        <p>Olimpiade Matematika Vektor Nasional (OMVN)</p>
+                        <p>Himatika Vektor Universitas Negeri Malang</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                    <!-- Tesimononie Image Slider -->
-                  </div>
-                  <div class="col-lg-7 px-lg-5">
-                    <div class="testie-quote">
-                      <i class="las la-quote-left"></i>
-                    </div>                    
-                    <!-- Tesimononie Text Slider -->
-                    <div class="testimonie-text-slider testimonial-slider">
-                      <div>
-                        <div class="testimonie-text my-4">
-                          “We're moving to this integration of biomedicine, information technology, wireless and mobile now - an era of digital medicine. 
-                          Even my stethoscope is now digital. And of course, there's an app for that.”
-                        </div>
-                        <div class="testimonie-meta d-flex align-items-center">
-                          <div class="avatar">
-                            <img src="images/Figma.png" alt="testie avatar">
-                          </div>
-                          <div class="info ms-4">
-                            <strong>Shane Catson</strong><br>
-                            <span>CEO, Capital SEO</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="testimonie-text my-4">
-                          “The First Industrial Revolution used water and steam power to mechanize production. The Second used electric power to create mass production. 
-                          The Third used electronics and information technology to automate production.”
-                        </div>
-                        <div class="testimonie-meta d-flex align-items-center">
-                          <div class="avatar">
-                            <img src="images/Dailymotion.png" alt="testie avatar">
-                          </div>
-                          <div class="info ms-4">
-                            <strong>Chris Wort</strong><br>
-                            <span>Designer, Focus Lab</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="testimonie-text my-4">
-                          “The number one benefit of information technology is that it empowers people to do what they want to do. It lets people be creative. 
-                          It lets people be productive. It lets people learn things they didn't think they could learn before, and so in a sense it is all about potential.”
-                        </div>
-                        <div class="testimonie-meta d-flex align-items-center">
-                          <div class="avatar">
-                            <img src="images/Snapchat.png" alt="testie avatar">
-                          </div>
-                          <div class="info ms-4">
-                            <strong>Jane Aniston</strong><br>
-                            <span>QA Engineer, Creative Agency</span>
-                          </div>
-                        </div>
-                      </div>
+
+                    <div class="col-md-4 col-lg-6">
+                        <h4 class="text-white mb-4">Contact Person</h4>
+                        <a class="btn btn-link" href="http://wa.me/+6285739040546">Bila (SD): 0857-3904-0546</a>
+                        <a class="btn btn-link" href="http://wa.me/+62895366148668">Deni (SMP): 0895-3661-48668</a>
+                        <a class="btn btn-link" href="http://wa.me/+6281231933341">Naya (SMA): 0812-3193-3341</a>
                     </div>
-                    <!-- Tesimononie Text Slider -->
-                  </div>
+                   
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== Testimonails ========== -->
-
-      <!-- ========== Blogs ========== -->
-      <section class="sp-tb" id="blogs">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-              <!-- Section Heading -->
-              <div class="section-heading">
-                <div class="sub-heading">
-                  <p>Stay upto date</p>
-                </div>
-                <div class="heading-title">
-                  <h2>From the blog and articles</h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    The Best Part of Waking Up is Blog and articles in Your Cup.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-            </div>
-          </div>
-          <!-- Blog Posts -->
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="blog-single mb-lg-0 mb-4">
-                <div class="blog-thumb-image">
-                  <a href="#">
-                    <img src="images/blog-01.png" alt="blog-01">
-                  </a>
-                </div>
-                <div class="mt-5">
-                  <div>Marketing, Creative</div>
-                  <div class="blog-title my-4">
-                    <h4>
-                      <a href="#"> Top 6 Membership Sites for Beginners </a>
-                    </h4>
-                  </div>
-                  <div>March 19, 2023</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="blog-single mb-lg-0 mb-4">
-                <div class="blog-thumb-image">
-                  <a href="#">
-                    <img src="images/blog-02.png" alt="blog-02">
-                  </a>
-                </div>
-                <div class="mt-5">
-                  <div>Tutorials Ui/Ux Design</div>
-                  <div class="blog-title my-4">
-                    <h4>
-                      <a href="#"> How to become a web designer in 2023 </a>
-                    </h4>
-                  </div>
-                  <div>March 25, 2023</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="blog-single mb-lg-0 mb-4">
-                <div class="blog-thumb-image">
-                  <a href="#">
-                    <img src="images/blog-03.png" alt="blog-03">
-                  </a>
-                </div>
-                <div class="mt-5">
-                  <div>Resources Tutorials</div>
-                  <div class="blog-title my-4">
-                    <h4>
-                      <a href="#">
-                        20 best affiliate programs for online creators in 2023
-                      </a>
-                    </h4>
-                  </div>
-                  <div>April 04, 2023</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Blog Posts -->
-        </div>
-      </section>
-      <!-- ========== Blogs ========== -->
-      <section id="prizes" class="feature-section pt-150 pb-50">
-      <div class="container">
-        <div class="section-title text-center mb-50">
-          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Reward</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg col-md-4 col-6">
-            <div class="single-feature">
-           
-              <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                <i class="las la-dollar-sign"></i>
-              </div>
-              <div class="content">
-                <h3>Uang Pembinaan</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-md-4 col-6">
-            <div class="single-feature">
-              <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                <i class="lni lni-certificate"></i>
-              </div>
-              <div class="content">
-                <h3>Piagam</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-md-4 col-6">
-            <div class="single-feature">
-              <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                <i class="lni lni-cup"></i>
-              </div>
-              <div class="content">
-                <h3>Trophy</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-md-4 col-6">
-            <div class="single-feature">
-              <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                <i class="lni lni-star"></i>
-              </div>
-              <div class="content">
-                <h3>Medali</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-md-4 col-6">
-            <div class="single-feature">
-              <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                <i class="lni lni-gift"></i>
-              </div>
-              <div class="content">
-                <h3>Merchandise</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-      <!-- ========== Download App ========== -->
-      <section>
-        <div class="container">
-          <div class="app-downlaod py-5 px-4">
-            <div class="row align-items-center">              
-                <!-- Section Heading -->
-                <div class="section-heading white text-white text-center mb-4">
-                  <div class="sub-heading mb-2">Join the Others</div>
-                  <h2>Download the app now</h2>
-                  <p>
-                    We Want To Be Smiths Download the app now.
-                  </p>
-                </div>
-                <!-- Section Heading -->  
-                <!-- Download Content --> 
-                <div class="text-center">
-                  <div class="download-stats">
-                    <div class="users-tack">
-                      <img src="images/users-stacked.png" alt="users-stacked">
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">OMVN XIV</a>, All Right Reserved. Designed By HTML Codex
+                        </div>
+                        
                     </div>
-                    <div class="mt-2">5M+ Downloads</div> 
-                  </div>
-                  <div class="download-buttons text-center mt-4">
-                    <a href="#" class="mb-sm-0 mb-3">
-                      <img src="images/app-store.png" alt="app-store">
-                    </a>
-                    <a href="#">
-                      <img src="images/google-play.png" alt="google-play">
-                    </a>
-                  </div> 
-                </div>              
-              <!-- Download Content --> 
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- ========== Download App ========== -->
+        <!-- Footer End -->
 
-      <!-- ========== Contact Area ========== -->
-      <section class="sp-tb" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <!-- Section Heading -->
-              <div class="section-heading mb-5">
-                <div class="sub-heading">
-                  <p>Contact Us</p>
-                </div>
-                <div class="heading-title">
-                  <h2>Get in Touch</h2>
-                </div>
-                <div class="heading-description">
-                  <p>
-                    When you say Get in touch you've said it all.
-                  </p>
-                </div>
-              </div>
-              <!-- Section Heading -->
-              <!-- Contact Info -->
-              <div class="contact-infos mb-5">
-                <div class="iconbox-secondary mb-4">
-                  <div class="item-icon me-4">
-                    <i class="las la-envelope"></i>
-                  </div>
-                  <div class="item-content">
-                    <h4>Email Us</h4>
-                    <p>example@gmail.com</p>
-                  </div>
-                </div>
-                <div class="iconbox-secondary mb-4">
-                  <div class="item-icon me-4">
-                    <i class="las la-phone-volume"></i>
-                  </div>
-                  <div class="item-content">
-                    <h4>Call Us</h4>
-                    <p>+61 0415 685 865</p>
-                  </div>
-                </div>
-                <div class="iconbox-secondary mb-4">
-                  <div class="item-icon me-4">
-                    <i class="las la-map"></i>
-                  </div>
-                  <div class="item-content">
-                    <h4>Visit Us</h4>
-                    <p>2561, Victoria Market, Melbourne VIC, 3000</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Contact Info -->
-            </div>
-            <div class="col-lg-6">
-              <!-- Contact Form -->
-              <div class="contact-form">
-                <div class="mb-4">
-                  <div class="mb-2">
-                    <h4>Leave us a message</h4>
-                  </div>
-                  <p>And we will get back to you as soon as possible.</p>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <input type="text" placeholder="First Name">
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <input type="text" placeholder="Last Name">
-                  </div>
-                  <div class="col-md-12 mb-4">
-                    <input type="text" placeholder="Email Address">
-                  </div>
-                  <div class="col-md-12 mb-4">
-                    <textarea placeholder="Your Message..."></textarea>
-                  </div>
-                </div>
-                <div class="submit-wrap">
-                  <button type="submit" class="button button-lg">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-              <!-- Contact Form -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== Contact Area ========== -->
-    </main>
 
-    <!-- ========== Site Footer ========== -->
-    <footer class="sp-b">
-      <div class="container">
-        <div class="row">
-          <!-- Footer Info -->
-          <div class="col-lg-3 mb-lg-0 mb-5">
-            <div class="footer-info">
-              <!-- Footer Logo -->
-              <div class="footer-info-logo">
-                <img src="images/color-logo.png" alt="color-logo">
-              </div>
-              <!-- Footer Logo -->
-              <div class="footer-info-text my-4">
-                <p>Professional looking, clean and modern design. Landing page for your business.</p>
-              </div>
-            </div>
-            <div class="footer-social">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="lab la-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lab la-whatsapp"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lab la-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lab la-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lab la-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Footer Info -->
-          <!-- Footer Links -->
-          <div class="col-lg-5 mb-lg-0 mb-5">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="footer-menu">
-                  <div class="menu-heading">
-                    <h5>Quick Links</h5>
-                  </div>
-                  <div class="footer-menu-list">
-                    <ul>
-                      <li>
-                        <a href="#">Home</a>
-                      </li>
-                      <li>
-                        <a href="#">About</a>
-                      </li>
-                      <li>
-                        <a href="#">Blogs</a>
-                      </li>
-                      <li>
-                        <a href="#">Pricing</a>
-                      </li> 
-                      <li>
-                        <a href="#">Download</a>
-                      </li> 
-                      <li>
-                        <a href="#">Features</a>
-                      </li> 
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-lg-0 mt-5">
-                <div class="footer-menu">
-                  <div class="menu-heading">
-                    <h5>Useful Links</h5>
-                  </div>
-                  <div class="footer-menu-list">
-                    <ul> 
-                      <li>
-                        <a href="#">Documentation</a>
-                      </li>
-                      <li>
-                        <a href="#">Developers Only</a>
-                      </li>
-                      <li>
-                        <a href="#">Terms & Conditions</a>
-                      </li>
-                      <li>
-                        <a href="#">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a href="#">Quick Integrations</a>
-                      </li>
-                      <li>
-                        <a href="#">Code Quality</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Footer Links -->
-          <div class="col-lg-4 mb-lg-0 mb-5">
-            <!-- Newsletter Form -->
-            <div class="newsletter">
-              <div class="newsletter-heading">
-                <h5>Subscribe for Newsletter</h5>
-                <p>
-                  Join our newsletter to stay up to date on features and
-                  releases.
-                </p>
-              </div>
-              <div class="newsletter-form mt-4">
-                <div class="mb-4">
-                  <input type="text" placeholder="Email Address">
-                </div>
-                <div>
-                  <button class="button button-lg">Subscribe</button>
-                </div>
-              </div>
-            </div>
-            <!-- Newsletter Form -->
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <!-- Copyright -->
-            <div class="copy-right text-center mt-5 pt-5">
-              Copyright 2024 OMVN XIV | Created by Naya<br>Powered by - GitHub.IO
-
-            </div>
-            <!-- Copyright -->
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- ========== Site Footer ========== -->
-
-    <!-- ========== Back To Top ========== -->
-    <div class="back-to-top">
-      <div class="icon-top">
-        <!-- Top Icon -->
-        <i class="las la-arrow-circle-up"></i>
-        <!-- Top Icon -->
-      </div>
-      <!-- Top Text -->
-      <div class="top-text">
-        Top
-      </div>
-      <!-- Top Text -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
-    <!-- ========== Back To Top ========== -->
 
-    <!-- ========== Scripts ========== -->
-    <script src="js/vendor/jquery.min.js"></script> 
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/slick.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-- ========== Scripts ========== -->
-  </body>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
